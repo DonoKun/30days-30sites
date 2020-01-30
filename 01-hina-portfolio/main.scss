@@ -1,0 +1,246 @@
+$blue: #68B8D7;
+$pink: #D768B8;
+$green: #B8D768;
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: none;
+    scroll-behavior: smooth;
+}
+
+// hero section
+
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        line-height: 1.6;
+    }
+
+    .hero-content h1 {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 2rem;
+        letter-spacing: .50rem;
+    }
+
+    .hero-content p {
+        font-size: 1.3rem;
+    }
+
+    .hero-btn {
+        margin-top: .75rem;
+        color: #fff;
+        text-decoration: none;
+        background-color: $blue;
+        padding: .75rem 3rem;
+        border-radius: 30px;
+    }
+
+    .hero-btn:hover {
+        background-color: $pink;
+    }
+}
+
+// about section
+
+#about {
+    border-top: 4px solid $blue;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%2368b8d7' fill-opacity='0.18' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.about-desc {
+    padding: 2rem;
+    line-height: 1.6;
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .header-hr {
+        width: 50%;
+        border: 1px solid $pink;
+    }
+
+    .fa-sun {
+        color: $blue;
+    }
+}
+
+.hina-avatar {
+   width: 256px;
+   height: 256px;
+   border-radius: 50%;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+}
+
+.about-picture {
+    margin-bottom: 2rem;
+}
+
+// portfolio section 
+
+#portfolio {
+    padding-bottom: 7rem;
+    padding-top: 5rem;
+    border-top: 5px solid $pink;
+}
+
+#portfolio h1 {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+#portfolio img {
+    max-width: 100%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 1.5rem 1.25rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .card-header {
+        text-align: center;
+        padding: .75rem;
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%2368b8d7' fill-opacity='0.18' fill-rule='evenodd'/%3E%3C/svg%3E");
+    }
+
+    .card-body {
+        padding: 1rem;
+        line-height: 1.6;
+    }
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: center;
+
+    .card-btn {
+        text-decoration: none;
+        color: #fff;
+        background-color: $blue;
+        margin: 0 .275rem;
+        padding: 1rem 3rem;
+        border-radius: 35px;
+    }
+
+    .card-btn:hover {
+        background-color: $pink;
+        transition: 1s;
+    }
+
+}
+
+// contact section
+#contact {
+    padding: 3rem;
+    background-color: $blue;
+    color: #fff;
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    .social {
+        list-style: none;
+      margin-top: .5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social a {
+        color: #fff;
+        padding: .5rem;
+        font-size: 1.75rem;
+    }
+
+    .social a:hover {
+        color: $pink;
+        transition: 1s;
+    }
+
+}
+
+#contact hr {
+    width: 50%;
+    margin: 0 auto;
+}
+
+// media queries
+
+@media(min-width: 600px) {
+
+    .hero-btn {
+        transition: 1s;
+    }
+
+    // about section 
+
+    #about {
+        display: flex;
+        flex-direction: row;
+    }
+
+    // portfolio section 
+
+    .card {
+        margin: 2rem 2rem;
+    }
+}
+
+
+
+@media (min-width: 1000px) {
+        // portfolio section
+        .portfolio-content {
+            margin-left: 2rem;
+            margin-right: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+    
+        .card-buttons {
+            display: flex;
+        }
+}
+
+@media(min-width: 1160px) {
+    #about {
+        display: flex;
+        justify-content: center;
+
+        .about-desc {
+            width: 40rem;
+        }
+    }
+}
