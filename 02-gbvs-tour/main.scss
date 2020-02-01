@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans|Uncial+Antiqua&display=swap');
+
+$red: #B80900;
+$black: #0E100F;
+$blue: #235F6C;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#hero {
+    height: 100vh;
+    background-image: url('images/gbvs-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    color: $black;
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+        font-family: 'Uncial Antiqua', cursive;
+    }
+
+    .hero-content p {
+        font-size: 2rem;
+    }
+
+    .hero-picture {
+       width: 90%;
+       height: auto;
+    }
+
+    .hero-btn {
+        text-decoration: none;
+        padding: .75rem 3rem;
+        background-color: $red;
+        color: #fff;
+        border-radius: 25px;
+    }
+
+    .hero-btn:hover {
+        transition: 1s;
+        background-color: #75B24A;
+    }
+
+}
+
+// about section
+#about {
+    padding: 2rem;
+    line-height: 1.6;
+    background-image: url('images/bg_menu_pc.jpg');
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+// schedule section
+#tournaments {
+    margin-top: 4rem;
+}
+
+#tournaments h1 {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 1rem 1rem;
+}
+
+.card-img-top {
+    padding: 1rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.evo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+// media queries 
+
+@media(min-width: 600px) {
+    #about {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .about-tour {
+        width: 30rem;
+    }
+}
