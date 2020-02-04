@@ -2,4 +2,6 @@ Hi Thanks for coming by! This is a list of all the websites I've completed so fa
 
 Day 1 <a href="01-hina-portfolio/index.html"> Portfolio</a>
 
-Day 2 <a href="01-hina-portfolio/index.html"> Event Invitation </a>
+Day 2 <a href="02-gbvs-tour/index.html"> Event Invitation </a>
+
+Day 3 <a href="03-courthouse/index.html"> Event Invitation </a>
