@@ -141,3 +141,17 @@ $gold: #fdb927;
     color: #fff;
     font-size: 1.3rem;
 }
+
+// media queries
+
+@media(min-width: 800px) {
+    #about {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+}
