@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  height: 100vh;
+  border-top: 5px solid #76E3F1;
+}
+
+.hero .hero-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .hero-btn {
+  text-decoration: none;
+  margin: 1rem;
+  background-color: #17ACBC;
+  padding: .5rem 3rem;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.35rem;
+}
+
+.bg-video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+/*# sourceMappingURL=main.css.map */
