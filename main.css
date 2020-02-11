@@ -6,7 +6,10 @@
 
 body {
     background-color: #FFE2F3;
+    border-top: 5px solid #e2ffee;
 }
+
+/* projects */
 
 .row{
     margin: 0 auto;
@@ -16,3 +19,14 @@ body {
     margin: 1rem 1rem;
 }
 
+.btn {
+    padding: .5rem 2rem;
+    border: 2px solid #ffe2f3;
+    background-color: #E2FFEE;
+    font-size: 1.3rem;
+}
+
+.btn:hover {
+    transition: 1s;
+    background-color: #ffe2f3;
+}
