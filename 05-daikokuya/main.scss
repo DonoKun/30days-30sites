@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// hero section
+.hero {
+    background-image: url('images/header-ramen.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // align-content: center;
+    position: relative;
+
+    .hero-overlay {
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        position: absolute;
+        opacity: .75;
+    }
+
+    .hero-content {
+        z-index: 50;
+        text-align: center;
+        color: #fff;
+    }
+
+    .hero-hr {
+        margin: 1.5rem;
+        width: 30rem;
+    }
+}
+
+// menu section
+#menu {
+    padding-top: 7rem;
+
+    h1 {
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+}
+
+// cards 
+.card {
+    width: 18rem;
+
+    .card-img {
+        max-width: 100%;
+    }
+
+    .card-content {
+        padding: 1rem;
+        line-height: 1.5;
+    }
+}
+
+
+
+.ramen-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
