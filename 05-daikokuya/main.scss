@@ -179,6 +179,11 @@ footer {
     font-size: 2rem;
 }
 
+.social-icons a:hover {
+    transition: 1s;
+    color: $red;
+}
+
 
 // media queries
 @media(min-width: 660px) {
