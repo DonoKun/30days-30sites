@@ -9,3 +9,5 @@ Day 3 <a href="03-courthouse/index.html"> Tourist Attraction</a>
 Day 4 <a href="04-april-skateboards/index.html"> Product Page</a>
 
 Day 5 <a href="05-daikokuya/index.html"> Menu Page</a>
+
+Day 6 <a href="https://donokuns30days30sites.netlify.com/06-kanojo-okarishimasu%20copy/">Author </a>
