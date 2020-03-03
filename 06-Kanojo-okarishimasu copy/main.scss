@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+$pink: #FF008F;
+$orange: #FFAC00;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway',sans-serif ;
+
+}
+
+.hero {
+    background-image: url('assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+    // section a 
+    .logo img {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    .section-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: .5rem;
+        justify-content: center;
+    }
+
+    // section b 
+
+    .manga-cover {
+        display: flex;
+        justify-content: center;
+    }
+
+    .manga-cover img {
+        max-width: 60%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .section-b-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        h2 {
+            margin-bottom: .75rem;
+        }
+    }
+
+    .hero-btn {
+        background-color: $pink;
+        border-radius: 30px;
+        color: #fff;
+        text-decoration: none;
+        padding: 1rem 3rem;
+        position: relative;
+        z-index: 1;
+        font-size: 1.25rem;
+       display: inline-block;
+
+    }
+
+    .hero-btn:hover {
+        background-color: $orange;
+        transition: 1s;
+    }
+}
+
+// media queries
+@media(min-width: 790px) {
+    .hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        background-image: url('assets/bg.jpg');
+        background-color: $pink;
+    }
+
+    .logo img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .manga-cover img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .section-a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section-b {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
